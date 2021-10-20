@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >   
+    <title>Log In | Webpage</title>
+</head>
+
+<style>
+    .form{
+      width: 30%;
+      margin-top: 5%;
+      margin-left: 3%;
+      
+    }
+    .text-box{
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 8px;
+        height: 40px;
+        text-align: right;
+        width: 63%; 
+        margin-left: 8%;      
+    }
+    .text-box:focus{
+       
+        outline: none;
+    }
+    .btn:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .table-container{
+        width: 50%;
+        margin-top: 5%;
+        border: 1px solid lightblue;
+        margin-left: 15%;
+        
+    }
+    .form,.table-container{
+        float: left;
+        
+    }
+    label,input{
+        margin-bottom: 12px;
+    }
+    label{
+        font-weight: bold;
+        text-align: justify;
+        margin-right: 5%;
+        font-size: 15px;
+    }
+    #hobby{
+        margin-right: 8%;
+    }
+    span{
+        padding-right: 8px;
+    }
+    #image,#image-text{
+        float: left;
+    }
+    #image-text{
+        margin-top: 8%;
+    }
+    #month{
+        float: none;
+    }
+    .form{
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    input[type=radio]{
+       margin: 8px; 
+    }
+
+   .right-container{
+       text-align: left;
+   }
+    
+</style>
+<body>
+        <div class="container-fluid">
+            <form action="">
+                <div class="form">
+                    <label for="username">Username</label>
+                    <input type="text" class="text-box right-container"  id="username" placeholder="Enter Username"><br>
+                    <label for="password">Password</label>
+                    <input type="password" class="text-box right-container" placeholder="Enter Password" id="password"><br> 
+                    <label for="email">Email</label>  
+                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="text-box right-container">                 
+                
+                    <div class="checkbox-elements">
+                        <label for="hobbies" id="hobby">Hobbies</label>
+                        <input type="checkbox" value="Cricket" id="hobbies">
+                        <span for="hobbies">Cricket</span>
+                        <input type="checkbox" value="Wrestling" id="hobbies">
+                        <span for="hobbies">Wrestling</span>
+                        <input type="checkbox" value="Hockey" id="hobbies">
+                        <span for="hobbies">Hockey</span>
+                        <input type="checkbox" value="Football" id="hobbies">
+                        <span for="hobbies">Football</span>
+                    </div>
+                    <label for="color">Color Scheme</label>
+                    <input type="color" name="Color" id="color" class="text-box right-container"><br>   
+                    <label for="date">Date Of Birth</label>
+                    <input type="date" name="date" id="date" class="text-box right-container"> <br>
+                    <label for="date">Date/Time</label>
+                    <input type="datetime" name="" id="time" class="text-box right-container"><br>
+                    <label for="local">Local Time</label>
+                    <input type="datetime-local" name="" id="local" class="text-box right-container"><br>
+                    <label for="file">Uplode Image</label>
+                    <input type="file" name="" id="file" class="text-box right-container"><br>
+                    <label for="hidden">Hidden</label>
+                    <input type="hidden" name="hidden" class="text-box right-container"><br>
+                    <label for="image" id="image-text">Image</label>
+                    <input type="image" src="chicken.jpg" alt="chicken" width="100px" height="100px" id="image" class="right-container"><br><br><br><br>
+                    <br><div>
+                    <label for="month">Month</label>
+                    <input type="month" name="month" id="month" class="text-box right-container"><br>
+                    </div>
+                    <label for="numebr">Pick Number</label>
+                    <input type="number" name="" id="number" class="text-box right-container"><br>
+                    <label for="radio">Gender</label>
+                    <input type="radio" name="Gender" id="radio" class="right-container">Male
+                    <input type="radio" name="Gender" id="radio"class="right-container">Female
+                    <input type="radio" name="Gender" id="radio"class="right-container" >Others <br>
+                    <label for="url">Link</label>
+                    <input type="url" name="url" id="url" class="text-box right-container"><br>
+                    <label for="range">Rate</label>
+                    <input type="range" name="" id="range" value="0" max="5"class="text-box right-container"><br>
+                    <label for="search">Search</label>
+                    <input type="search" placeholder="Type Something" id="search" class="text-box right-container"><br>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="91+" id="phone"  class="text-box right-container"><br>
+                    <label for="time">Time</label>
+                    <input type="time" name="" id="time"class="text-box right-container"><br>
+                    <label for="week">Week</label>
+                    <input type="week" name="" id="week"class="text-box right-container"><br>
+                    <div class="buttons">
+                        <input type="submit" value="Register" class="btn btn-primary right-container">
+                        <input type="reset" value="Reset" class="btn btn-danger">
+                    </div>
+                </div>
+                
+            </form>
+            <div class="table-container">
+                <table class="table table-light table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Id</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@larry</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Drew</td>
+                            <td>the Animal</td>
+                            <td>@drew</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Barry</td>
+                            <td>the Crow</td>
+                            <td>@twitter</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Green</td>
+                            <td>the Arrow</td>
+                            <td>@green</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Allen</td>
+                            <td>the Flash</td>
+                            <td>@allen</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Skull</td>
+                            <td>the Human</td>
+                            <td>@skull</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Grace</td>
+                            <td>the Place</td>
+                            <td>@grace</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Alexios</td>
+                            <td>the Person</td>
+                            <td>@alexios</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Kassandra</td>
+                            <td>the Female</td>
+                            <td>@kassandra</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Edward</td>
+                            <td>the King</td>
+                            <td>@edward</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-outline-primary">
+                                <input type="button" value="Delete" class="btn btn-outline-danger">
+                            </td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        
+        
+</body>
+</html>
