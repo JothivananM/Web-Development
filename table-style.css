@@ -32,10 +32,9 @@ caption{
     margin-bottom: 5px;
     padding: 8px;
 }
-
-
-
-
+.btn:focus{
+    box-shadow: none !important;
+}
 .pagination {
     display: inline-block;
     margin-left: 30%;
