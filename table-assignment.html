@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table | Assignment</title>
+</head>
+<body>
+    
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .table{
+           margin-top: 1%;
+            caption-side: top;
+            width: 100%;
+        }
+
+        .table th,td{
+            text-align: left;
+            text-transform: capitalize;
+            padding: 5px;
+        }
+
+        .name{
+            float: left;
+        }
+
+        .year{
+            padding-right: 50px;
+        }
+
+        .year,.page{
+            float: right;
+        }
+
+        label{
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        caption{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(63, 30, 94);
+            padding: 5px;
+            text-align: left;
+        }
+
+        #element{
+            text-align: center;
+        }
+
+       
+    </style>
+
+</body>
+
+    <div class="container">
+        <div class="header">
+            <span class="name">ABC Enterprise Pvt. Ltd.</span>
+            <span class="page">Page #1</span>
+            <span class="year">2018 - 2019</span>         
+        </div>  
+        <br>    
+        <label for="">Sales Table</label><br>
+           
+        <table class="table">
+        <caption>South</caption>   
+            
+            <thead>
+                <th>salesman</th>
+                <th>mobile</th>
+                <th>actual sales</th>
+                <th>expected sales</th>
+                <th>returns</th>
+                <th>remarks</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>john</td>
+                    <td>233434455</td>
+                    <td>401000.00</td>
+                    <td>50,0000.00</td>
+                    <td>4500.00</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>smith</td>
+                    <td>123456789</td>
+                    <td>829300.00</td>
+                    <td>492382.00</td>
+                    <td>1256</td>
+                    <td>target reached</td>
+                </tr>
+                <tr>
+                    <td>jones</td>
+                    <td>123456789</td>
+                    <td colspan="4" id="element">suspended</td>
+                </tr>
+                <tr>
+                    <td>james</td>
+                    <td>123456789</td>
+                    <td>829300.00</td>
+                    <td>492382.00</td>
+                    <td>7781</td>
+                    <td>--</td>
+                </tr>
+            </tbody>        
+        </table>
+
+        <table class="table">
+            <caption>North</caption>   
+                
+                <thead>
+                    <th>salesman</th>
+                    <th>mobile</th>
+                    <th>actual sales</th>
+                    <th>expected sales</th>
+                    <th>returns</th>
+                    <th>remarks</th>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>ford</td>
+                        <td>233434455</td>
+                        <td>401000.00</td>
+                        <td>50,0000.00</td>
+                        <td>4500.00</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>haber</td>
+                        <td>123456789</td>
+                        <td>829300.00</td>
+                        <td>492382.00</td>
+                        <td>1256</td>
+                        <td>---</td>
+                    </tr>
+                </tbody>        
+            </table>
+    </div>
+
+</html>
