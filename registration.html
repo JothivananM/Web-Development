@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >    -->
+    <title>Registration Form | For New Users</title>
+</head>
+<body>
+        <div class="container">
+            <div class="form">
+                <h2>Registration Form</h2>
+                <div class="form-body">
+                    <label for="text" class="label-control">Username</label>
+                    <input type="text" id="text" placeholder="Enter Username" class="input-control"><br>
+                    <label for="password" class="label-control">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" class="input-control"><br>
+                    <label for="email" class="label-control">Email</label>  
+                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="input-control">                    
+                        <div class="hobbies">
+                            <label for="hobbies" id="hobby" class="label-control" >Hobbies</label>
+                            <div class="check-box">
+                                <input type="checkbox" value="Cricket" id="hobbies">
+                                <span for="hobbies">Cricket</span>
+                                <input type="checkbox" value="Wrestling" id="hobbies">
+                                <span for="hobbies">Wrestling</span>
+                                <input type="checkbox" value="Hockey" id="hobbies">
+                                <span for="hobbies">Hockey</span>
+                                <input type="checkbox" value="Football" id="hobbies">
+                                <span for="hobbies">Football</span>
+                            </div>
+                        </div>
+                        <label for="color" class="label-control">Color Scheme</label>
+                        <input type="color" name="Color" id="color" class="input-control"><br>   
+                        <label for="dob"class="label-control">Date Of Birth</label>
+                        <input type="date" name="date" id="dob" class="input-control"> <br>
+                        <label for="datetime"class="label-control">Date/Time</label>
+                        <input type="datetime" name="" id="datetime" class="input-control"><br>
+                        <label for="local"class="label-control">Local Time</label>
+                        <input type="datetime-local" name="" id="local" class="input-control"><br>
+                        <label for="file"class="label-control">Uplode Image</label>
+                        <input type="file" name="" id="file" class="input-control"><br>
+                        <label for="image" id="image-text" class="label-control">Image</label>
+                        <input type="image" src="chicken.jpg" alt="chicken" width="100px" height="100px" id="image" class="image-control"><br>
+                        <label for="month"class="label-control">Month</label>
+                        <input type="month" name="month" id="month" class="input-control"><br>
+                        <label for="numebr" class="label-control">Pick Number</label>
+                        <input type="number" name="" id="number" class="input-control"><br>
+                        <label for="radio" class="label-control">Gender</label>
+                        <div class="check-box">
+                            <input type="radio" name="Gender" id="radio" >Male
+                            <input type="radio" name="Gender" id="radio">Female
+                            <input type="radio" name="Gender" id="radio" >Others <br>
+                        </div>  
+                        <label for="url"class="label-control">Link</label>
+                        <input type="url" name="url" id="url" class="input-control"><br>
+                        <label for="range"class="label-control">Rate</label>
+                        <input type="range" name="" id="range" value="0" max="5"class="input-control"><br>
+                        <label for="search"class="label-control">Search</label>
+                        <input type="search" placeholder="Type Something" id="search" class="input-control"><br>
+                        <label for="phone"class="label-control">Phone</label>
+                        <input type="tel" name="91+" id="phone"  class="input-control"><br>
+                        <label for="time"class="label-control">Time</label>
+                        <input type="time" name="" id="time"class="input-control"><br>
+                        <label for="week"class="label-control">Week</label>
+                        <input type="week" name="" id="week"class="input-control"><br>   
+                        <div >
+                            <input type="submit" value="Register" class="btn-submit buttons">
+                            <input type="reset" value="Reset" class="btn-reset buttons">
+                        </div>              
+                
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="table-control">
+                    <thead class="thead-control">
+                        <tr>
+                            <th>Id</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@larry</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Drew</td>
+                            <td>the Animal</td>
+                            <td>@drew</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Barry</td>
+                            <td>the Crow</td>
+                            <td>@twitter</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Green</td>
+                            <td>the Arrow</td>
+                            <td>@green</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Allen</td>
+                            <td>the Flash</td>
+                            <td>@allen</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Skull</td>
+                            <td>the Human</td>
+                            <td>@skull</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Grace</td>
+                            <td>the Place</td>
+                            <td>@grace</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Alexios</td>
+                            <td>the Person</td>
+                            <td>@alexios</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Kassandra</td>
+                            <td>the Female</td>
+                            <td>@kassandra</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Edward</td>
+                            <td>the King</td>
+                            <td>@edward</td>
+                            <td>
+                                <input type="button" value="Edit" class="button-edit">
+                                <input type="button" value="Delete" class="button-delete">
+                            </td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
