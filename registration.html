@@ -14,11 +14,11 @@
                 <h2>Registration Form</h2>
                 <div class="form-body">
                     <label for="text" class="label-control">Username</label>
-                    <input type="text" id="text" placeholder="Enter Username" class="input-control"><br>
+                    <input type="text" id="text" placeholder="Enter Username" class="input-control" pattern="^[A-Za-z ]$" title="please fill by format"><br>
                     <label for="password" class="label-control">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter Password" class="input-control"><br>
                     <label for="email" class="label-control">Email</label>  
-                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="input-control">                    
+                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="input-control" autocomplete="off">                    
                         <div class="hobbies">
                             <label for="hobbies" id="hobby" class="label-control" >Hobbies</label>
                             <div class="check-box">
@@ -47,7 +47,7 @@
                         <label for="month"class="label-control">Month</label>
                         <input type="month" name="month" id="month" class="input-control"><br>
                         <label for="numebr" class="label-control">Pick Number</label>
-                        <input type="number" name="" id="number" class="input-control"><br>
+                        <input type="number" name="" id="number" step="10" min="10" max="100" class="input-control"><br>
                         <label for="radio" class="label-control">Gender</label>
                         <div class="check-box">
                             <input type="radio" name="Gender" id="radio" >Male
