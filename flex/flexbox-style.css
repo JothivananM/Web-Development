@@ -6,4 +6,25 @@ body{
     margin: 0%;
     padding: 0%;
 }
+header{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(70, 55, 55);
+}
+nav {
+    background-color: rgb(192, 231, 169);
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul li a{
+    padding: 8px 16px;
+    display: inline-block;  
+    color: rgb(73, 71, 63);
+    transition: background-color .3s;
+}
 nav ul li a
