@@ -12,10 +12,10 @@ h2{
     /* margin: 5% 0 0 2%; */
     width: 100%;
 }
-.form{
+form{
     border: 1px solid lightgray;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
 }
 .form-body{
     padding: 3%;
@@ -77,11 +77,11 @@ h2{
     cursor: pointer;
 }
 .table-container{
-    width: 43%;
+    width: 45%;
     margin-top: 5%;
     margin-left:5%;    
 }
-.form,.table-container{
+form,.table-container{
     float: left;    
 }
 .button-edit{
@@ -109,7 +109,8 @@ h2{
     background-color:rgb(45, 45, 182) ;
 }
 .table-control {
-    margin: 5%;    
+    margin: 2%;  
+    padding: 50px;  
     border: 1px solid lightgray;
 }  
 .table-control td{
