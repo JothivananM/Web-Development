@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="circle-icon.jpg">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >    -->
     <title>Registration Form | For New Users</title>
 </head>
 <body>
         <div class="container">
-            <form action="http://postman-echo.com/post" method="post" target="_blank">
+            <form action="http://postman-echo.com/post" method="post" target="myframe">
                 <h2>Registration Form</h2>
                 <div class="form-body">
                     <fieldset>
                         <legend>Personal Details</legend>
                         <label for="text" class="label-control">Username</label>
-                    <input type="text" id="text" placeholder="Enter Username" class="input-control"  ><br>
-
+                    <input type="text" id="text" placeholder="Enter Username" class="input-control" autocomplete="off"><br>
                     <label for="password" class="label-control">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter Password" class="input-control"><br>
                     <label for="email" class="label-control">Email</label>  
@@ -215,5 +215,8 @@
                 </table>
             </div>
         </div>
+       
+            <iframe name="myframe" frameborder="1" width="80%" height="500px"></iframe>
+        
 </body>
 </html>
