@@ -13,7 +13,9 @@
             <form action="http://postman-echo.com/post" method="post" target="_blank">
                 <h2>Registration Form</h2>
                 <div class="form-body">
-                    <label for="text" class="label-control">Username</label>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="text" class="label-control">Username</label>
                     <input type="text" id="text" placeholder="Enter Username" class="input-control"  ><br>
 
                     <label for="password" class="label-control">Password</label>
@@ -54,6 +56,7 @@
                                 <input type="checkbox" value="Football" id="hobbies">
                                 <span for="hobbies">Football</span>
                             </div>
+                    </fieldset>
                         </div>
                         <label for="color" class="label-control">Color Scheme</label>
                         <input type="color" name="Color" id="color" class="input-control"><br>   
