@@ -10,15 +10,38 @@
 </head>
 <body>
         <div class="container">
-            <form>
+            <form action="http://postman-echo.com/post" method="post" target="_blank">
                 <h2>Registration Form</h2>
                 <div class="form-body">
                     <label for="text" class="label-control">Username</label>
-                    <input type="text" id="text" placeholder="Enter Username" class="input-control" pattern="^[A-Za-z ]$" title="please fill by format"><br>
+                    <input type="text" id="text" placeholder="Enter Username" class="input-control"  ><br>
+
                     <label for="password" class="label-control">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter Password" class="input-control"><br>
                     <label for="email" class="label-control">Email</label>  
-                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="input-control" autocomplete="off">                    
+                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" class="input-control" autocomplete="off"> 
+                    <label for="city" class="label-control">City</label>
+                    <input type="text" id="city" list="cities" class="input-control"><br>  
+                    <datalist id="cities">
+                        <option value="Salem"></option>
+                        <option value="Coimbatore"></option>
+                        <option value="Trichy"></option>
+                        <option value="Chennai"></option>
+                        <option value="Tirupur"></option>
+                        <option value="Hosur"></option>
+                        <option value="Madhurai"></option>
+                    </datalist>  
+                    <label for="coutnry" class="label-control">Coutnry</label>
+                    <select name="country" id="country" class="input-control">
+                        <option value="Australia">Australia</option>
+                        <option value="United States">"United States</option>
+                        <option value="UK">UK</option>
+                        <option value="Africa">Africa</option>
+                        <option value="India" selected>India</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Japan">Japan</option>
+                    </select>               
                         <div class="hobbies">
                             <label for="hobbies" id="hobby" class="label-control" >Hobbies</label>
                             <div class="check-box">
@@ -35,13 +58,11 @@
                         <label for="color" class="label-control">Color Scheme</label>
                         <input type="color" name="Color" id="color" class="input-control"><br>   
                         <label for="dob"class="label-control">Date Of Birth</label>
-                        <input type="date" name="date" id="dob" class="input-control"> <br>
-                        <label for="datetime"class="label-control">Date/Time</label>
-                        <input type="datetime" name="" id="datetime" class="input-control"><br>
+                        <input type="date" name="date" id="dob" class="input-control"> <br>                        
                         <label for="local"class="label-control">Local Time</label>
                         <input type="datetime-local" name="" id="local" class="input-control"><br>
                         <label for="file"class="label-control">Uplode Image</label>
-                        <input type="file" name="" id="file" class="input-control"><br>
+                        <input type="file" name="" id="file" class="input-control" multiple><br>
                         <label for="image" id="image-text" class="label-control">Image</label>
                         <input type="image" src="chicken.jpg" alt="chicken" width="100px" height="100px" id="image" class="image-control"><br>
                         <label for="month"class="label-control">Month</label>
@@ -65,9 +86,11 @@
                         <label for="time"class="label-control">Time</label>
                         <input type="time" name="" id="time"class="input-control"><br>
                         <label for="week"class="label-control">Week</label>
-                        <input type="week" name="" id="week"class="input-control"><br>   
+                        <input type="week" name="" id="week"class="input-control"><br> 
+                        <label for="comment" class="label-control">Comment</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" class="input-control"></textarea>  
                         <div >
-                            <input type="submit" value="Register" class="btn-submit buttons">
+                            <input type="submit" value="Register" class="btn-submit buttons" >
                             <input type="reset" value="Reset" class="btn-reset buttons">
                         </div>              
                 
