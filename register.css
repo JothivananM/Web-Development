@@ -15,7 +15,7 @@ h2{
 form{
     border: 1px solid lightgray;
     border-radius: 5px;
-    width: 40%;
+    width: 45%;
 }
 .form-body{
     padding: 3%;
@@ -41,7 +41,7 @@ form{
     outline: none;
 }
 .check-box{
-    margin: -3% 0 30px 28%;
+    margin: -3% 0 30px 31%;
 }
 .image-control{
     padding: 8px; 
@@ -115,10 +115,14 @@ form,.table-container{
 }  
 .table-control td{
     padding: 15px;
+   border-bottom: 1px solid lightgray;
+}
+.table-control th{
+    padding: 10px;
 }
 .thead-control{
     color: rgb(255, 255, 255);
-    background-color: rgb(161, 49, 49);
+    background-color: rgb(185, 94, 94);
 }
 .thead-control td{
     font-size: 20px;

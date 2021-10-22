@@ -13,9 +13,9 @@ body{
     border-left: 1px;
 }
 
-/* .table tr:hover{
+.table tr:hover{
     background-color: rgb(219, 232, 243);
-} */
+}
 
 .table tr:nth-child(even){
     background-color: rgb(233, 248, 248);
