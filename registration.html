@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >    -->
     <title>Registration Form | For New Users</title>
 </head>
-<body>
+<body background="background.jpg">
         <div class="container">
             <form action="http://postman-echo.com/post" method="post" target="myframe">
                 <h2>Registration Form</h2>
@@ -93,14 +93,15 @@
                         <label for="comment" class="label-control">Comment</label>
                         <textarea name="comment" id="comment" cols="30" rows="10" class="input-control"></textarea>  
                         <div >
-                            <input type="submit" value="Register" class="btn-submit buttons" >
-                            <input type="reset" value="Reset" class="btn-reset buttons">
+                            <input type="submit" id="submit" value="Register" class="btn-submit buttons" >
+                            <input type="reset" id="reset" value="Reset" class="btn-reset buttons">
                         </div>              
                 
                 </div>
             </form>
             <div class="table-container">
                 <table class="table-control">
+                    <caption><h2>Table of Users</h2></caption>
                     <thead class="thead-control">
                         <tr>
                             <th>Id</th>
