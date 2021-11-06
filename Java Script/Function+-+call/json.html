@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+        <h1>JSON</h1>
+        <script>
+            let a = {
+    firstName : `John`,
+    lastName : `Smith`,
+    age : `20`
+};
+
+let b = JSON.stringify(a);
+console.log(b);
+console.log(JSON.parse(b));
+
+let k = Object.keys(a);
+console.log(k);
+for (const key in k) {
+    if (Object.hasOwnProperty.call(k, key)) {
+        const element = k[key];
+        console.log(element);
+        
+    }
+}
+
+    </script>
+      </body>
+</html>
